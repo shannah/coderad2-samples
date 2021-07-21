@@ -1,40 +1,36 @@
-= Codename One Project
+= CodeRAD 2 Sampler
 
-This is a multi-module maven project for building a Codename One application. Codename One applications written in Java and/or Kotlin, and are built as native apps and can be built and deployed to iOS, Android, Mac, Windows, Linux, and also to the Web.
+This project includes a collection of samples that demonstrate the usage of CodeRAD components.
 
-== Getting Started
+== Running the Project
 
-=== Java
+Download or clone this repository, then open the project in IntelliJ.
 
-If you plan to use Java as your primary language, https://shannah.github.io/cn1-maven-archetypes/cn1app-archetype-tutorial/getting-started.html[start here].
+Then press the "Run" button.
 
-=== Kotlin
+[NOTE]
+.Dependencies
+====
+Dependencies in this repository point to _SNAPSHOT_ versions of both Codename One and CodeRAD.  In order to run this project, you'll either need to change the dependencies in the link:pom.xml[] file and the link:common/pom.xml[] XML file to point to release versions, or you need to install Codename One and CodeRAD into your local Maven repository.
 
-If you plan to use Kotlin as your primary language, https://shannah.github.io/cn1app-archetype-kotlin-template/getting-started.html[start here].
+At time of writing the latest Codename One release version is 7.0.33.  You can update this project to point to this version by changing the `cn1.version` and `cn1.plugin.version` properties in the link:pom.xml[] file.  You an find the latest release version of Codename One https://search.maven.org/search?q=codenameone-maven-plugin[here].
 
+At the time of writing, the latest version of CodeRAD is 2.0-pre4.  You can update this project to use this version by changing the `<version>` for the `coderad-annotion-processor` dependency in the link:pom.xml[] and the `coderad-lib` dependency in the link:common/pom.xml[] file.  You can find the latest version of CodeRAD https://search.maven.org/artifact/com.codenameone/coderad-lib[here].
+====
 
-== Eclipse Users
+== CodeRAD View Samples
 
-IMPORTANT: If you use Eclipse as your IDE, **read this first**
+The link:common/src/main/rad/views/com/codename1/rad/sampler[com.codename1.rad.sampler] views package includes some sample CodeRAD views.
 
-The _tools/eclipse_ directory contains eclipse ".launch" files that will add common Maven goals as menu items inside Eclipse.
+== Java Source
 
-**You should copy these files into the project root directory before importing the project into Eclipse**
+Most of the app's Java source code can be found in the link:common/src/main/java/com/codename1/rad/sampler[com.codename1.rad.sampler] package in the common module.
 
-== NetBeans Users
+== Learn More
 
-IMPORTANT: If you use NetBeans as your IDE, **read this first**
+. https://github.com/shannah/CodeRAD[CodeRAD] - The CodeRAD Github Repository includes all the information you need to get started building iOS and Android apps using CodeRAD.
+. https://www.codenameone.com[Codename One Website] - CodeRAD is built upon Codename One, a toolkit for building truly native, mobile-first, pixel-perfect apps in Java and Kotlin.
 
-The _tools/netbeans_ directory contains netbeans configuration files that are necessary for NetBeans to work properly with this project.
+== Credits
 
-**You should copy these files into the project root directory before opening the project into NetBeans**
-
-This project is a multi-module Maven project that was generated from a Maven archetype.
-
-== IntelliJ Users
-
-The project should work in IntelliJ out of the box.  No need to copy any files.
-
-== Help and Support
-
-See the https://www.codenameone.com[Codename One Web Site].
+This project created by https://sjhannah.com[Steve Hannah].
