@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<y safeArea="true" scrollableY="true" xsi:noNamespaceSchemaLocation="PickerSamples.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Picker Samples</title>
+
+    <spanLabel>This page demonstrates unbound pickers.</spanLabel>
+    <spanLabel>For pickers bound to models see see: </spanLabel>
+    <button rad-href="#RADPickerSamples">RAD Picker Samples</button>
+
+    <label>Pick a color</label>
+    <picker strings="csv:Red, Green, Blue" />
+
+    <label>Datepicker</label>
+    <datePicker/>
+
+    <label>Timepicker</label>
+    <timePicker/>
+
+    <label>Date and Time picker</label>
+    <dateTimePicker/>
+
+    <label>Calendar Picker</label>
+    <calendarPicker/>
+
+    <label>Duration Picker</label>
+    <durationPicker/>
+
+    <label>Duration Hours Picker</label>
+    <durationHoursPicker/>
+
+    <label>Duration Minutes Picker</label>
+    <durationMinutesPicker/>
+
+</y>

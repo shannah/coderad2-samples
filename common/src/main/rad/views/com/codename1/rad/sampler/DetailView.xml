@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<y rad-model="com.codename1.rad.sampler.models.UserProfile" xsi:noNamespaceSchemaLocation="DetailView.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Details</title>
+    <label>Name: ${Person.name}.text</label>
+    <label>Email: ${Person.email}.text</label>
+</y>

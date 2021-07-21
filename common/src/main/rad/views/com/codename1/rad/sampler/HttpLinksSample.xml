@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<y xsi:noNamespaceSchemaLocation="HttpLinksSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>HTTP Links</title>
+
+    <button rad-href="https://www.codenameone.com _blank">codenameone.com</button>
+</y>

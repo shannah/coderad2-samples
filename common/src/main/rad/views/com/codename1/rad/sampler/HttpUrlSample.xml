@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<y scrollableY="true" style.bgImage="https://cdn.shopify.com/s/files/1/0169/6995/7440/products/F0662xxxx_DIO_TRA_KINGDOM_OPTIMUSPRIME_2_Online_300DPI_1024x1024.jpg?v=1601047458 width:100vw; height:100vh; scale:fill"
+        xsi:noNamespaceSchemaLocation="HttpUrlSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title hidden="true"/>
+    <label icon="https://cdn.shopify.com/s/files/1/0169/6995/7440/products/F0662xxxx_DIO_TRA_KINGDOM_OPTIMUSPRIME_2_Online_300DPI_1024x1024.jpg?v=1601047458 width:90vw; aspect:1.0"/>
+    <label icon="https://cdn.shopify.com/s/files/1/0169/6995/7440/products/F0662xxxx_DIO_TRA_KINGDOM_OPTIMUSPRIME_2_Online_300DPI_1024x1024.jpg?v=1601047458 mask:circle;width:50vw"/>
+    <label icon="https://cdn.shopify.com/s/files/1/0169/6995/7440/products/F0662xxxx_DIO_TRA_KINGDOM_OPTIMUSPRIME_2_Online_300DPI_1024x1024.jpg?v=1601047458 mask:roundrect;width:50vw"/>
+    <label icon="jar:///chromebook.jpg width:50vw; scale:fill; mask:circle"/>
+
+</y>

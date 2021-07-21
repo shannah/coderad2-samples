@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<border safeArea="true" xsi:noNamespaceSchemaLocation="BorderLayoutSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>BorderLayout Sample</title>
+    <button layout-constraint="north">North button</button>
+    <button layout-constraint="south">South button</button>
+    <button layout-constraint="east">East button</button>
+    <button layout-constraint="west">West button</button>
+    <border layout-constraint="center">
+        <button layout-constraint="java:BorderLayout.NORTH">Center &lt; North</button>
+        <button layout-constraint="java:BorderLayout.SOUTH">Center &lt; South</button>
+    </border>
+</border>

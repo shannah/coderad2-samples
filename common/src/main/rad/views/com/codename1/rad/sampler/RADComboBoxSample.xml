@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<y xsi:noNamespaceSchemaLocation="RADComboBoxSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>RADComboBox Sample</title>
+
+    <define-tag name="favColor"/>
+
+    <radComboBox tag="favColor">
+        <comboBox model="csv:Red, Green, Blue, Orange, Black"/>
+    </radComboBox>
+
+
+
+    <label>You have selected:</label>
+    <radLabel tag="favColor"/>
+
+</y>

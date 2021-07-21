@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<y xsi:noNamespaceSchemaLocation="SheetSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Sheet Sample</title>
+    <button rad-href="#StartPage sheet">Open Sheet</button>
+    <button rad-href="#StartPage sheet-top">Open Sheet Top</button>
+    <button rad-href="#StartPage sheet-left">Open Sheet Left</button>
+    <button rad-href="#StartPage sheet-right">Open Sheet Right</button>
+    <button rad-href="#StartPage sheet-center">Open Sheet center</button>
+</y>

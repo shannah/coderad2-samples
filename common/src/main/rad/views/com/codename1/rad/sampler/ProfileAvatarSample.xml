@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<y xsi:noNamespaceSchemaLocation="ProfileAvatarSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Profile Avatar Sample</title>
+    <import>
+        import com.codename1.rad.sampler.models.*;
+    </import>
+    <var name="profile" type="UserProfile"/>
+    <script>
+        profile = new UserProfileImpl();
+        profile.setName("George");
+        profile.setPhotoUrl("https://weblite.ca/cn1tests/radchat/george.jpg");
+    </script>
+    <center><profileAvatar view-model="profile" size="25vw"/></center>
+
+</y>

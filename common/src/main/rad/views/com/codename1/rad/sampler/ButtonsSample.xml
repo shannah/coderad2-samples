@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<y scrollableY="true" view-controller="com.codename1.rad.sampler.controllers.ButtonsSampleViewController"
+        xsi:noNamespaceSchemaLocation="ButtonsSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Buttons example</title>
+
+    <!-- Define a category.  Actions are registered in this category in the controller
+        class com.codename1.rad.sampler.controllers.ButtonsSampleViewController, then rendered
+        in the various `<buttons>` components. -->
+    <define-category name="BUTTONS_MENU"/>
+
+
+    <label>Menu with FlowLayout</label>
+    <buttons actionCategory="BUTTONS_MENU"/>
+
+    <label>Menu with BoxLayout.Y</label>
+    <buttons actionCategory="BUTTONS_MENU" layout="BoxLayout.y()"/>
+
+    <label>Menu with BoxLayout.X</label>
+    <buttons actionCategory="BUTTONS_MENU" layout="BoxLayout.x()"/>
+
+    <label>Menu with Grid Layout</label>
+    <buttons actionCategory="BUTTONS_MENU" layout="new GridLayout(3,3)"/>
+
+    <spanLabel>Menu with limit=3 and overflow actionsheet</spanLabel>
+    <buttons actionCategory="BUTTONS_MENU" layout="new GridLayout(3)" limit="3"/>
+
+    <spanLabel>Menu with limit=3 and overflow popupmenu</spanLabel>
+    <buttons actionCategory="BUTTONS_MENU" layout="new GridLayout(3)" limit="3" overflowMenuStyle="PopupMenu"/>
+
+    <spanLabel>Menu with limit=3 and overflow none</spanLabel>
+    <buttons actionCategory="BUTTONS_MENU" layout="new GridLayout(3,3)" limit="3" overflowMenuStyle="None"/>
+
+    
+</y>

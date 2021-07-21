@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<splitPane xsi:noNamespaceSchemaLocation="MasterDetailView.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Master Detail Example</title>
+    <entityList provider="com.codename1.rad.sampler.providers.SampleListProvider.class">
+        <row-template>
+            <button text="java:rowModel.getText(Person.name)" rad-href="#DetailView{rowModel} sel:#DetailContainer"/>
+        </row-template>
+    </entityList>
+    <border name="DetailContainer"/>
+
+</splitPane>

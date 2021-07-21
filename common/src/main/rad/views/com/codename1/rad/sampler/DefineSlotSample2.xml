@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<y safeArea="true" view-controller="com.codename1.rad.sampler.controllers.DefineSlotSample2ViewController" xsi:noNamespaceSchemaLocation="DefineSlotSample2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>FillSlot From Controller</title>
+
+
+    <!-- The topLeftSlot of the DefineSlotSample component will be filled
+        by the DefineSlotSample2ViewController because it includes a fillSlot() hook -->
+    <defineSlotSample/>
+
+
+</y>

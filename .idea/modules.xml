@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/coderad2-samples.iml" filepath="$PROJECT_DIR$/.idea/coderad2-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/coderad2-samples-common.iml" filepath="$PROJECT_DIR$/common/coderad2-samples-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/coderad2-samples-javase.iml" filepath="$PROJECT_DIR$/javase/coderad2-samples-javase.iml" />
+    </modules>
+  </component>
+</project>

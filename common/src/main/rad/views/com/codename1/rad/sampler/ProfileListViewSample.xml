@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<y xsi:noNamespaceSchemaLocation="ProfileListViewSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>ProfileListView</title>
+    <import>
+        import com.codename1.rad.sampler.providers.*;
+    </import>
+
+    <profileListView provider="SampleListProvider.class"/>
+
+    <import>
+        import com.codename1.rad.sampler.models.*;
+    </import>
+    <var name="profiles" type="EntityList"/>
+    <script>
+        /* NOTE: Creating the model here only for simplicity of sample.
+            in real app you should load entity list from view model or lookup.
+         */
+        profiles = new EntityList();
+        UserProfile george = new UserProfileImpl();
+        george.setName("George");
+        george.setPhotoUrl("https://weblite.ca/cn1tests/radchat/george.jpg");
+        profiles.add(george);
+
+        UserProfile kramer = new UserProfileImpl();
+        kramer.setName("Kramer");
+        kramer.setPhotoUrl("https://weblite.ca/cn1tests/radchat/kramer.jpg");
+        profiles.add(kramer);
+
+        UserProfile jerry = new UserProfileImpl();
+        jerry.setName("Jerry");
+        profiles.add(jerry);
+
+
+    </script>
+    <profileListView view-model="profiles"/>
+
+    <profileListView view-model="profiles" avatarSize="25vw"/>
+</y>

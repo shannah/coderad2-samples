@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<y xsi:noNamespaceSchemaLocation="EmbeddedDetailViews.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <import>
+        import com.codename1.rad.sampler.models.*;
+        import com.codename1.rad.sampler.providers.*;
+    </import>
+    <title>Embedded Detail Views</title>
+    <var name="user1" type="UserProfile"/>
+    <var name="user2" type="UserProfile"/>
+    <script>
+        user1 = new UserProfileImpl();
+        user2 = new UserProfileImpl();
+        user1.setName("Steve");
+        user2.setName("Shai");
+    </script>
+    <label>Detail View for user1</label>
+    <detailView view-model="user1"/>
+
+    <label>Detail View for user2</label>
+    <detailView view-model="user2"/>
+
+    <label>DetailView embedded in list view</label>
+    <entityList provider="SampleListProvider.class">
+        <row-template>
+            <!-- We explicitly reference the "rowModel" as the view-model here -->
+            <detailView view-model="rowModel"/>
+        </row-template>
+    </entityList>
+
+    <label>DetailView embedded in list view 2</label>
+    <entityList provider="SampleListProvider.class">
+        <row-template>
+            <!-- This demonstrates dependency injection as the rowModel will be used
+                as the view model implicitly here. -->
+            <detailView />
+        </row-template>
+    </entityList>
+</y>

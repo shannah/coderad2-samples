@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<y view-controller="com.codename1.rad.sampler.controllers.SampleViewController"
+        xsi:noNamespaceSchemaLocation="CustomViewControllerSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <define-category name="SAMPLE_ACTION"/>
+    <define-tag name="name" value="Person.name"/>
+
+    <label>Enter name</label>
+    <radTextField tag="name"/>
+    <button>
+        <bind-action category="SAMPLE_ACTION"/>
+    </button>
+</y>

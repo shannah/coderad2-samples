@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<border xsi:noNamespaceSchemaLocation="EntityListSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Entity List Sample</title>
+    <entityList layout-constraint="center"
+        provider="com.codename1.rad.sampler.providers.SampleListProvider.class"
+    >
+        <row-template>
+            <border uiid="SampleListRow">
+                <profileAvatar size="1.5rem" layout-constraint="west"/>
+                <radLabel tag="Person.name" layout-constraint="center"
+                          component.allStyles.font="native:MainRegular 1rem"
+                          component.allStyles.marginLeft="1rem"
+                />
+
+            </border>
+        </row-template>
+    </entityList>
+</border>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<splitPane xsi:noNamespaceSchemaLocation="IFrameSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>IFrame Sample</title>
+    <y>
+        <button rad-href="#StartPage sel:#Center" rad-transition="rad-href 1s flip">Start Page</button>
+        <button rad-href="#BindingsPage sel:#Center" rad-transition="rad-href 1s flip">Bindings Page (Flip)</button>
+        <button rad-href="#BindingsPage sel:#Center" rad-transition="rad-href 1s slide">Bindings Page (Slide)</button>
+        <button rad-href="#BindingsPage sel:#Center" rad-transition="rad-href 1s cover">Bindings Page (Cover)</button>
+        <button rad-href="#BindingsPage sel:#Center" rad-transition="rad-href 1s fade">Bindings Page (Fade)</button>
+        <button rad-href="#BindingsPage sel:#Center" rad-transition="rad-href 1s uncover">Bindings Page (Uncover)</button>
+        <button rad-href="#IFrameSample sel:#Center" rad-transition="rad-href 1s flip">IFrame Sample Page</button>
+        <button rad-href="#CustomViewControllerSample sel:#Center" rad-transition="rad-href 1s flip">Custom View Controller</button>
+
+
+
+    </y>
+    <border name="Center">
+        <label layout-constraint="center">Placeholder for content</label>
+
+    </border>
+</splitPane>

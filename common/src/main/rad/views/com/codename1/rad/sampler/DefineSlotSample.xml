@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<border safeArea="true" xsi:noNamespaceSchemaLocation="DefineSlotSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Define Slot Sample</title>
+    <border layout-constraint="north">
+        <define-slot id="topLeftSlot" layout-constraint="west">
+            <y>
+                <label>Default Content</label>
+                <spanLabel>This is the default content of topLeftSlot</spanLabel>
+            </y>
+        </define-slot>
+        <y layout-constraint="center">
+            <label>North Area</label>
+        </y>
+    </border>
+
+
+    <y layout-constraint="center">
+        <spanLabel>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</spanLabel>
+    </y>
+    <button layout-constraint="south">
+        South Button
+    </button>
+</border>

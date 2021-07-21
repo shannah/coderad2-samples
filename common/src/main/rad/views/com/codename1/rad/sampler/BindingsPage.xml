@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<border xsi:noNamespaceSchemaLocation="BindingsPage.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    style.bgColor="0xffffff"
+        style.bgTransparency="0xff"
+>
+    <title>Bindings</title>
+
+    <define-tag name="name" value="Person.name"/>
+    <define-tag name="email" value="Person.email"/>
+    <define-tag name="password"/>
+
+    <var name="submitted" type="boolean"/>
+    <define-tag name="comments" />
+
+    <y layout-constraint="center">
+        <spanLabel>
+            This form demonstrates some of CodeRAD's property binding features.
+
+        </spanLabel>
+        <label>Name:</label>
+        <radTextField tag="name"/>
+        <label bind-text='java:submitted &amp;&amp; getEntity().isEmpty(name) ? "Please enter a name":""'
+            rad-transition="text 0.2s"
+        />
+
+        <label>Email:</label>
+        <radTextField tag="email"/>
+
+        <label>Password</label>
+        <radTextField tag="password" component.constraint="TextArea.PASSWORD"
+        />
+
+        <label>Comments:</label>
+        <radTextArea tag="comments" component.rows="6" component.style.fgColor="0xff00ff"/>
+
+    </y>
+
+    <flow layout-constraint="south">
+        <button
+                text="Submit"
+                bind-enabled="java:!getEntity().isEmpty(comments) &amp;&amp; !getEntity().isEmpty(name) &amp;&amp; !getEntity().isEmpty(email)"
+        >
+            <script><![CDATA[
+                it.addActionListener(evt->{
+                    submitted = true;
+                    EntitySupport.setChanged(getEntity());
+                    EntitySupport.notifyObservers(getEntity());
+                    System.out.println("Here");
+                    revalidateWithAnimationSafety();
+                });
+                ]]></script>
+        </button>
+    </flow>
+
+</border>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<y xsi:noNamespaceSchemaLocation="FABSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>FAB Button Sample</title>
+    <fab/>
+
+</y>

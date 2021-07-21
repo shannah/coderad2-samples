@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<border safeArea="true" bind-componentForm.formBottomPaddingEditingMode="formBottomPadding"
+        xsi:noNamespaceSchemaLocation="PickerFormBottomPaddingSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <define-tag name="formBottomPadding" type="boolean"/>
+    <y scrollableY="true" layout-constraint="center">
+        <label>Label 1</label>
+        <label>Label 1</label>
+        <label>Label 1</label>
+        <label>Label 1</label>
+        <label>Label 1</label>
+        <label>Label 1</label>
+        <label>Label 1</label>
+        <label>Label 1</label>
+        <label>Label 1</label>
+        <label>Label 1</label>
+        <datePicker/>
+    </y>
+    <right layout-constraint="south">
+        <radCheckBox tag="formBottomPadding" component.text="Use Form BottomPadding Editing Mode"/>
+    </right>
+
+</border>

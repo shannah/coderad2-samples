@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<y safeArea="true" xsi:noNamespaceSchemaLocation="FillSlotSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>FillSlot Sample</title>
+
+    <spanLabel>DefineSlotSample with default content:</spanLabel>
+    <defineSlotSample/>
+
+    <spanLabel>DefineSlotSample with overridden content:</spanLabel>
+    <defineSlotSample>
+        <fill-slot id="topLeftSlot">
+            <label>Overridden</label>
+            <spanLabel>This content was overridden in the FillSlotSample template</spanLabel>
+        </fill-slot>
+
+    </defineSlotSample>
+</y>

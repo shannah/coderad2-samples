@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<y xsi:noNamespaceSchemaLocation="StyleTransitionSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Style Transitions</title>
+    <define-tag name="styleName"/>
+    <radButtonList tag="styleName">
+        <radioButtonList model="csv:SmallGreen, MediumRed, LargeBlue"/>
+    </radButtonList>
+
+    <label  bind-uiid="java:${styleName}.text"
+            rad-transition="uiid 300ms">Test Label</label>
+</y>

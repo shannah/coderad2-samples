@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<y xsi:noNamespaceSchemaLocation="GridLayoutSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>GridLayout Sample</title>
+    <label>3 Column Grid</label>
+    <grid layout-columns="3">
+        <button>Column 1</button>
+        <button>Column 2</button>
+        <button>Column 3</button>
+    </grid>
+
+    <label>4 Columns 2 rows</label>
+    <grid layout-columns="4" layout-rows="2">
+        <button>Column 1</button>
+        <button>Column 2</button>
+        <button>Column 3</button>
+        <button>Column 4</button>
+        <button>Column 1</button>
+        <button>Column 2</button>
+        <button>Column 3</button>
+        <button>Column 4</button>
+    </grid>
+</y>

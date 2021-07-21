@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<y xsi:noNamespaceSchemaLocation="LabelEntityViewSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>LabelEntityView Example</title>
+    <import>
+        import com.codename1.rad.sampler.models.*;
+    </import>
+    <var name="profile" type="UserProfile"/>
+    <script>
+        profile = new UserProfileImpl();
+        profile.setName("Duke");
+        profile.setPhotoUrl("https://upload.wikimedia.org/wikipedia/commons/3/3d/Codenameone_New_Logo.png");
+    </script>
+
+    <labelEntityView view-model="profile"/>
+    <labelEntityView view-model="profile" iconWidth="3rem" iconHeight="3rem"/>
+    <labelEntityView view-model="profile" iconWidth="6rem" iconHeight="5rem"/>
+    <labelEntityView view-model="profile" iconWidth="50vw" iconHeight="50vw"/>
+</y>

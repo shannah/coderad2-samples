@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<y safeArea="true" xsi:noNamespaceSchemaLocation="TitleHiddenSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title hidden="true"/>
+
+    <label>This form has no title area</label>
+
+    <button rad-href="java:back()">Go Back</button>
+</y>

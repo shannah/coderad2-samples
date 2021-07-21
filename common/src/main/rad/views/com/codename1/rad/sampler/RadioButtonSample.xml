@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<y safeArea="true" xsi:noNamespaceSchemaLocation="RadioButtonSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Radio Button Sample</title>
+    <label>Select One:</label>
+
+    <!-- Add some radio buttons.
+        Note: We use rad-var to make them available inside the script tag
+        to add them to the same button group -->
+    <radioButton text="blue" rad-var="blueRadio"/>
+    <radioButton text="yellow" rad-var="yellowRadio"/>
+    <radioButton text="orange" rad-var="orangeRadio"/>
+    <script>
+        /* Add buttons to a ButtonGroup so only one can
+            be selected at a time.
+         */
+        new ButtonGroup(blueRadio, yellowRadio, orangeRadio);
+    </script>
+
+
+    <spanLabel>Select One (Toggle version):</spanLabel>
+    <radioButton text="blue" rad-var="blueToggle" toggle="true"/>
+    <radioButton text="yellow" rad-var="yellowToggle" toggle="true"/>
+    <radioButton text="orange" rad-var="orangeToggle" toggle="true"/>
+    <script>
+        /* Add buttons to a ButtonGroup so only one can
+            be selected at a time.
+         */
+        new ButtonGroup(blueToggle, yellowToggle, orangeToggle);
+    </script>
+
+</y>

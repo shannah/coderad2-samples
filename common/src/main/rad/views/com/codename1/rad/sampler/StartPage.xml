@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<y scrollableY="true" xsi:noNamespaceSchemaLocation="StartPage.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>CodeRAD2 Sampler</title>
+
+    <button rad-href="#BindingsPage">Bindings</button>
+    <button rad-href="#TransitionLayoutExample">Layout Transition Example</button>
+    <button rad-href="#EntityListSample">Entity List Sample</button>
+    <button rad-href="#SheetSample">Sheet Sample</button>
+    <button rad-href="#IFrameSample">IFrame Sample</button>
+    <button rad-href="#FABSample">FAB Button Sample</button>
+    <button rad-href="#HttpUrlSample">Http URL Sample</button>
+    <button rad-href="#MediaSample">Media Sample</button>
+    <button rad-href="#PickerSamples">Picker Samples</button>
+    <button rad-href="#PickerFormBottomPaddingSample">Picker FormBottomPadding Test</button>
+    <button rad-href="#MasterDetailView">Master-Detail View</button>
+    <button rad-href="#ButtonsSample">Buttons</button>
+    <button rad-href="#EmbeddedDetailViews">Embedded Views</button>
+    <button rad-href="#LabelEntityViewSample">LabelEntityView Sample</button>
+    <button rad-href="#ProfileAvatarsTitleComponentSample">ProfileAvatarsTitle Sample</button>
+    <button rad-href="#ProfileAvatarSample">ProfileAvatar Sample</button>
+    <button rad-href="#ProfileListViewSample">ProfileListView Sample</button>
+    <button rad-href="#RADButtonListSample">RADButtonList Sample</button>
+    <button rad-href="#RADComboBoxSample">RADComboBox sample</button>
+
+    <button rad-href="#RadioButtonSample">Radio Button Sample</button>
+    <button rad-href="#RADSwitchSample">RADSwitch Sample</button>
+    <button rad-href="#RADTextAreaSample">RADTextArea Sample</button>
+    <button rad-href="#RADTextFieldSample">RADTextField Sample</button>
+    <button rad-href="#HttpLinksSample">HTTP Links Sample</button>
+    <button rad-href="#StyleTransitionSample">Style Transition Sample</button>
+    <button rad-href="#GridLayoutSample">GridLayout Sample</button>
+    <button rad-href="#BorderLayoutSample">BorderLayout Sample</button>
+    <button rad-href="#TitleSamples">Title Samples</button>
+    <button rad-href="#FillSlotSample">Fill Slot Sample</button>
+    <button rad-href="#DefineSlotSample2">Define Slot Sample 2</button>
+
+
+</y>

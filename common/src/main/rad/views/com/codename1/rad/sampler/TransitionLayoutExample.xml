@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<border xsi:noNamespaceSchemaLocation="StartPage.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Start Page</title>
+
+    <!-- Define a tag for the layout property.
+            This will add a property to the auto-generated view model class.
+    -->
+    <define-tag name="layout"/>
+
+    <!-- A text field that is bound to the "layout" property
+            As user types, it updates the "layout" property of the view model. -->
+    <radTextField tag="layout"  layout-constraint="north"/>
+
+    <!-- A Container with initial layout BoxLayout.Y.
+        We bind the "layout" property to a java expression that will set layout
+        to FlowLayout if the model's "layout" property is the string "flow", and
+        BoxLayout.Y otherwise.
+
+        The rad-transition="layout 1s" attribute will cause changes to the "layout" property
+        to be animated with a duration of 1s for each transition.
+    -->
+    <y bind-layout='java:"flow".equals(getEntity().getText(layout)) ? new FlowLayout() : BoxLayout.y()'
+       rad-transition="layout 1s"
+       layout-constraint="center"
+    >
+        <label>Label 1</label>
+        <label>Label 2</label>
+        <label>Label 3</label>
+        <label>Label 4</label>
+        <label>Label 5</label>
+        <button>Button 1</button>
+
+    </y>
+
+</border>

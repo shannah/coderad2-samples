@@ -1,0 +1,62 @@
+#Constants {
+    includeNativeBool: true;
+}
+
+CustomLabel {
+    cn1-derive: Label;
+    color: blue;
+}
+
+MenuItem {
+    font-family: 'native:MainRegular';
+    font-size: 10vw;
+    color: blue;
+    padding: 0.7rem;
+}
+
+EmptyEmail {
+    cn1-derive: Label;
+    font-size: 0.5rem;
+    color: red;
+
+}
+
+NonEmptyEmail {
+    cn1-derive: EmptyEmail;
+    font-size: 0.3rem;
+    color:gray;
+}
+
+MyToggleButton {
+    cn1-derive: Button;
+    margin: 1mm;
+    background-color: #cccccc;
+    border-radius: 2mm;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    color: gray;
+}
+
+MyToggleButton.pressed {
+    background-color: blue;
+    color: white;
+}
+
+SmallGreen {
+    cn1-derive: Label;
+    font-size: 0.5rem;
+    color:green;
+}
+
+MediumRed {
+    cn1-derive: Label;
+    font-size: 1.5rem;
+    color:red;
+}
+
+LargeBlue {
+    cn1-derive: Label;
+    font-size: 3rem;
+    color:blue;
+}
+

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<y xsi:noNamespaceSchemaLocation="RADTextAreaSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>RADTextArea Sample</title>
+
+    <define-tag name="description"/>
+
+    <label>Enter Description</label>
+    <radTextArea tag="description"/>
+    <flow>
+        <label>Char count</label>
+        <label bind-text="java:String.valueOf(${description}.text.length())"
+            rad-transition="text 0s"
+        />
+    </flow>
+
+</y>

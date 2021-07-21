@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<y safeArea="true" scrollableY="true" xsi:noNamespaceSchemaLocation="RADPickerSamples.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>RAD Picker Samples</title>
+
+    <define-tag name="favColor"/>
+    <define-tag name="birthdate" type="java.util.Date"/>
+    <define-tag name="timeField" type="int"/>
+    <define-tag name="lastModified" type="java.util.Date"/>
+    <!--<define-tag name="durationField" type="long"/>-->
+
+    <spanLabel>This page demonstrates binding pickers to model properties.</spanLabel>
+    <spanLabel>For plain pickers see: </spanLabel>
+    <button rad-href="#PickerSamples">Picker Samples</button>
+
+    <label>Pick a color</label>
+    <radPicker tag="favColor" component.strings="csv:Red, Green, Blue" />
+
+    <label>You selected:</label>
+    <radLabel tag="favColor" component.preferredH="2rem"/>
+
+    <label>Select your birthdate</label>
+    <radDatePicker tag="birthdate"/>
+
+    <label>Your birthday is:</label>
+    <radLabel tag="birthdate" component.preferredH="2rem" dateFormat="TimeAgo"/>
+
+
+    <label>Timepicker</label>
+    <radTimePicker tag="timeField"/>
+
+    <label>Date and Time picker</label>
+    <dateTimePicker tag="lastModified"/>
+
+    <label>Calendar Picker</label>
+    <radCalendarPicker tag="birthdate"/>
+
+
+
+    <!--
+    <label>Duration Picker</label>
+    <radDurationPicker tag="durationField"/>
+
+    <label>Duration Hours Picker</label>
+    <radDurationHoursPicker tag="durationField"/>
+
+    <label>Duration Minutes Picker</label>
+    <radDurationMinutesPicker tag="durationField"/>
+    -->
+    
+</y>

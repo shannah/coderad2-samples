@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<y scrollableY="true"
+   xsi:noNamespaceSchemaLocation="RADButtonListSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>RADButtonList Sample</title>
+    <import>
+        import com.codename1.rad.sampler.models.*;
+    </import>
+    <define-tag name="favColors" type="java.util.List" initialValue="new"/>
+    <define-tag name="favCartoonCharacter"/>
+    <define-tag name="favProfiles" type="EntityList" initialValue="new"/>
+
+    <label>Select Favourite Color:</label>
+
+    <!-- A checkboxlist bound to a list property -->
+    <radButtonList tag="favColors">
+        <checkBoxList model="csv:Red, Green, Blue"/>
+    </radButtonList>
+    <radButtonList tag="favColors">
+        <checkBoxList toggle="true" model="csv:Red, Green, Blue"/>
+    </radButtonList>
+
+    <radButtonList tag="favColors">
+        <checkBoxList toggle="true" buttonUiid="MyToggleButton" model="csv:Red, Green, Blue"/>
+    </radButtonList>
+
+    <label>Fav Color</label>
+    <!-- Bind favColors to a label to demonstrate binding collection to label -->
+    <label bind-text="java:getEntity().get(favColors).toString()"/>
+
+    <!-- Bind to another label using macro syntax  -->
+    <label bind-text="java:${favColors}.text"/>
+
+    <radButtonList tag="favColors">
+        <checkBoxList multiSelectModel="csv:Red, Green, Blue"/>
+    </radButtonList>
+
+
+    <label>Favourite Cartoon Character</label>
+    <radButtonList tag="favCartoonCharacter">
+        <radioButtonList model="csv:Wolverine, Optimus Prime, Bugs Bunny"/>
+    </radButtonList>
+    <radButtonList tag="favCartoonCharacter">
+        <radioButtonList model="csv:Wolverine, Optimus Prime, Bugs Bunny"/>
+    </radButtonList>
+    <radButtonList tag="favCartoonCharacter">
+        <radioButtonList toggle="true" model="csv:Wolverine, Optimus Prime, Bugs Bunny"/>
+    </radButtonList>
+
+    <radButtonList tag="favCartoonCharacter">
+        <radioButtonList buttonUiid="MyToggleButton" toggle="true" model="csv:Wolverine, Optimus Prime, Bugs Bunny"/>
+    </radButtonList>
+
+    <label>You chose:</label>
+    <!-- We need a rad-transition to force a revalidate/animate because the bounds
+        of the label will change when the text is changed -->
+    <label bind-text="java:${favCartoonCharacter}.text" rad-transition="text 0.3s"/>
+    <label bind-text="favCartoonCharacter"/>
+    <radLabel tag="favCartoonCharacter"/>
+    <label>The end</label>
+
+    <label>Fav colors with switches</label>
+    <radButtonList tag="favColors">
+        <switchList multiSelectModel="csv:Red, Green, Blue"/>
+    </radButtonList>
+
+    <label>Fav colors with switches/y layout</label>
+    <radButtonList tag="favColors">
+        <switchList multiSelectModel="csv:Red, Green, Blue" layout="BoxLayout.y()"/>
+    </radButtonList>
+
+    <var name="profiles" type="EntityList"/>
+    <script>
+        profiles = new EntityList();
+        for (String name : new String[]{"Steve", "Shai", "Chen", "Lois", "Clark", "Rogue"}) {
+            UserProfile profile = new UserProfileImpl();
+            profile.setName(name);
+            profiles.add(profile);
+        }
+    </script>
+    <label>Favourite Profiles</label>
+    <radButtonList tag="favProfiles">
+        <checkBoxList model="profiles.toMultipleSelectionListModel()"/>
+    </radButtonList>
+    <radButtonList tag="favProfiles">
+        <switchList model="profiles.toMultipleSelectionListModel()"/>
+    </radButtonList>
+    <radButtonList tag="favProfiles">
+        <checkBoxList toggle="true" model="profiles.toMultipleSelectionListModel()"/>
+    </radButtonList>
+
+</y>

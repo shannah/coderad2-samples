@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<y xsi:noNamespaceSchemaLocation="RADSwitchSample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>RADSwitch Sample</title>
+
+
+    <define-tag name="advancedOptions" type="boolean"/>
+    <border>
+        <label layout-constraint="west">Show Advanced</label>
+        <radSwitch layout-constraint="east" tag="advancedOptions"/>
+    </border>
+
+    <y bind-hidden="java:!${advancedOptions}.bool" rad-transition="hidden 0.3s">
+        <label>Advanced Options</label>
+        <spanLabel>Here are some advanved options that you may or may not want to set</spanLabel>
+        <textField hint="enter option"/>
+    </y>
+</y>

@@ -1,0 +1,3 @@
+target
+common/src/main/rad/views/**/*.xsd
+common/src/main/rad/views/*.xsd

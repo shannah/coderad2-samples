@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<y xsi:noNamespaceSchemaLocation="TitleSamples.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Title Samples</title>
+    <spanLabel>The following forms demonstrate a few different variations of the &lt;title&gt; tag.</spanLabel>
+    <button rad-href="#TitleTextSample">Title with Text</button>
+    <button rad-href="#TitleIconSample">Title with Icon</button>
+    <button rad-href="#TitleHiddenSample">Title Hidden</button>
+</y>
